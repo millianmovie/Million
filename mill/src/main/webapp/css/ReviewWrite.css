@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+@font-face {
+   font-family: 'NEXON Lv2 Gothic';
+   src:
+      url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff')format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "NEXON Lv2 Gothic";
+}
+form{
+   background-color: #fefefe;   
+}
+
+img {
+   background-color: #fefefe;
+}
+.RW_Reviewtitle {
+   color: #1a1a1a;
+   font-size: 45px;
+   background-color: #fefefe;
+   padding-bottom: 15px;
+}
+.msg {
+   color: red;
+}
+
+#RW_Contents {
+   display: flex;
+   justify-content: space-around;
+   background-color: #fefefe;
+}
+
+.RW_Likebox {
+   background-position: 0 -434px;
+   background-color: #fefefe;
+   
+}
+.RW_Like_all {
+   background-color: #fefefe;
+   
+}
+.RW_Like_all input {
+   margin: 0;
+   padding: 0;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+.RW_Like_all input:active+.RW_Like_check {
+   opacity: 0.5;
+}
+
+.RW_Like_all input:checked+.RW_Like_check {
+   -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+   -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+   filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+.RW_Like_check {
+   cursor: pointer;
+   background-color: #fefefe;
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 180px;
+   height: 75px;
+   margin: 133px auto;
+   -webkit-transition: all 100ms ease-in;
+   -moz-transition: all 100ms ease-in;
+   transition: all 100ms ease-in;
+   -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
+   -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
+   filter: brightness(1.8) grayscale(1) opacity(0.7);
+}
+
+.RW_Like_check:hover {
+   -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+   -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+   filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+.RW_Speechbubble_left, .RW_Speechbubble_right {
+   line-height: 2;
+   display: flex;
+   justify-content: center;
+   margin: 11% 11% 0 0;
+   background-color: #fefefe;
+}
+.RW_Speechbubble_right {
+   line-height: 2;
+   display: flex;
+   justify-content: center;
+   margin: 11% 0 0 11%;
+}
+
+.RW_Txt {
+   font-size: 23px;
+   font-weight: bold;
+   background-color: #fefefe;
+}
+
+#bad {
+   display: none;
+   font-weight: 500;
+   color: #000000;
+   text-align: center;
+   width: 180px;
+   height: 75px;
+}
+
+.virus {
+   position: relative;
+   overflow: hidden;
+   margin-right: 6px;
+   width: 32px;
+   height: 30px;
+   background: url(etc/virus.png) no-repeat 0 -200px;
+   vertical-align: middle;
+}
+
+#RW_Miniposter {
+   display: inline-block;
+   width: 213px;
+   height: 298px;
+   margin: 30px 10px 15px;
+}
+#RW_Star {
+   background-color: #fefefe;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 15px; 
+}
+
+.RW_Star_score {
+   position: relative;
+   font-size: 32px;
+   color: #ddd;
+   background-color: #fefefe;
+}
+
+.RW_Star_score input {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   opacity: 0;
+   cursor: pointer;
+   background-color: #fefefe;
+}
+
+.RW_Star_score span {
+   width: 0;
+   position: absolute;
+   left: 0;
+   color: #fc0;
+   overflow: hidden;
+   pointer-events: none;
+   background-color: white;
+}
+
+#RW_Alltitle {
+   margin: 20px 10px 0;
+   background-color: #fefefe;
+   display: flex;
+    justify-content: center;
+}
+
+#reviewTitle {
+   background-color: #fefefe;
+   width: 400px;
+   font-size: 20px;
+   font-weight: bold;
+   text-align: center;
+}
+
+input[type=text], input:focus {
+   border: none;
+   outline: none;
+}
+
+#RW_Allcontent {
+   margin: 5px 10px;
+   background-color: #fefefe;
+}
+
+#reviewContent {
+    background-color: #fefefe;
+    width: 86%;
+    height: 6.25em;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    font-family: "NEXON Lv2 Gothic";
+    border: 2px solid transparent;
+    resize: none;
+}
+
+#reviewContent:focus {
+   outline: none;
+}
+#RW_btn {
+   background-color: #fefefe;
+   margin-top: 1rem;
+}
+
+.RW_bttn {
+   display: inline-block;
+    border: none;
+    background-color: white;
+    color: #888;
+    font-size: 1.15rem;
+    font-weight: bold;
+    width: 48%;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.RW_bttn:hover {
+   color: #1a1a1a;
+}
+
+/* The Modal (background) */
+/* .hidden { */
+/*     display: none; */
+/* } */
+
+#RW_Modal {
+   display:none;
+/*    display: flex; Hidden by default  */
+   align-items: center;
+   justify-content: center; 
+     position: fixed; /* Stay in place */
+     z-index: 20; /* Sit on top */
+     padding-top: 100px; /* Location of the box */
+     left: 0;
+     top: 0;
+     width: 100%; /* Full width */
+     height: 100%; /* Full height */
+     overflow: auto; /* Enable scroll if needed */
+     background-color: rgb(0,0,0); /* Fallback color */ 
+     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+#RW_Modal-con {
+  font-family: "NEXON Lv2 Gothic";
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px 20px 40px 20px;
+  border: 1px solid #888;
+  width: 750px;
+  height: 780px;
+}
+
+/* The Close Button */
+#RW_CloseModal {
+  color: #aaa;
+  float: right;
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #fefefe;
+}
+
+#RW_CloseModal:hover,
+#RW_CloseModal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

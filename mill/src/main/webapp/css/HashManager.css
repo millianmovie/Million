@@ -1,0 +1,80 @@
+@charset "EUC-KR";
+body{
+    margin: 0;
+    background-image: url("img/galaxy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:White;
+}
+#fir_con{
+	display:flex;
+	justify-content:center;
+}
+.container{
+    background-color: #191A1D;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	width:85%;
+}
+.tag-area{
+    border: 1px solid lightgray;
+}
+.tags-tab {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+}
+.tags-tab div {
+    padding: 1em;
+}
+#under-line {
+    height: 4px;
+    background-color: blueviolet;
+    position: absolute;
+    width: 80px;
+    left: 0px;
+    top: 53px;
+    padding: 0px;
+}
+.tag{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.movie{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.movie:hover{
+    background-color: bisque;
+} 
+div[class^='tag-name'], div[class^='movie-name']{
+	padding: 4px 12px;
+	border: 1px solid pink;
+	border-radius: 4px;
+/* 	background-color: pink; */
+}
+div[class^='movie-name']:hover{
+	background-color: orange;
+}
+.tag:hover{
+	background-color: lightblue;
+}
+/* { */
+/* 	padding: 4px 12px; */
+/* 	border: 1px solid pink; */
+/* 	border-radius: 4px; */
+/* /* 	background-color: lightblue; */ */
+/* } */
+div[class^='movie-name']:hover{
+	background-color: orange;
+}
+div.tag:has(> div.tag-selected){
+    background-color: lightpink;
+}
+button:hover{
+	cursor: pointer;
+	color: #fff;
+	background-color: #000;
+}

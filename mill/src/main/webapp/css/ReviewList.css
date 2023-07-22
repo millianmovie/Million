@@ -1,0 +1,240 @@
+@charset "EUC-KR";
+
+@font-face {
+   font-family: 'NEXON Lv2 Gothic';
+   src:
+      url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff')
+      format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+* {
+   font-family: 'NEXON Lv2 Gothic';
+}
+
+.RL_ccon {
+   display: flex;
+   justify-content: center;
+}
+
+#RL_text {
+   background: #FFFFFF;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(5, 1fr);
+   padding:1%;
+}
+
+.RL_container {
+   width: 1181.09PX;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center;
+}
+
+.RL_review {
+   position: relative;
+   grid-row-start: 1;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding-top: 18px;
+   padding-bottom: 1px;
+   background: #FFFFFF;
+   border: 3px solid gray;
+   border-image-slice: 1;
+   width: 450PX; 
+   margin-top: 30px;
+}
+
+.RL_review:after {
+   content: '';
+   position: absolute;
+   border-style: solid;
+   border-width: 25px 24px 0;
+   border-color: #FFFFFF transparent;
+   display: block;
+   width: 0;
+   z-index: 1;
+    bottom: -23px;
+    left: 32px;
+   border-right: 0;
+}
+
+.RL_review:before {
+   content: '';
+   position: absolute;
+   border-style: solid;
+   border-width: 30px 29px 0;
+   border-color: gray transparent;
+   display: block;
+   width: 0;
+   z-index: 0;
+   bottom: -30px;
+   left: 30px;
+   border-right: 0;
+}
+
+.RL_icon {
+   margin: -10px;
+}
+
+.RL_good {
+   width: 60px;
+   height: 60px;
+   float: left;
+   background: #FFFFFF;
+   margin: -12px 0px 0px 4px;
+   grid-column: 1/2;
+   grid-row: 1/3;
+}
+
+.RL_star_rating_1 {
+   background: #FFFFFF;
+   font-weight: bold;
+   grid-column: 2/6;
+   margin-top: -5px;
+}
+
+button.RL_fullreview {
+   background: #FFFFFF;
+   border: none;
+   font-size: 15px;
+   font-weight: bold;
+   color: #888;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 15px;
+}
+
+button.RL_fullreview:hover, button.RL_fullreview:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.RL_title_1 {
+   background: #FFFFFF;
+   margin: 0px 0px 0px 5px;
+   font-weight: bold;
+   font-size: 18px;
+   grid-column: 2/6;
+   grid-row-start: 2;
+}
+
+.RL_re_bottom {
+   background: #FFFFFF;
+   grid-column: 4/6;
+   grid-row-start: 5;
+   width: 297px;
+}
+
+.RL_date_1 {
+   background: #fff;
+   color: #888;
+   font-weight: bold;
+   font-size: 15px;
+}
+
+.RL_writer {
+   display: inline-block;
+   position: absolute;
+   font-size: 18px;
+   color: white;
+   font-weight: bold;
+   width: 60px;
+   text-align: center;
+   margin: 36px 0px 0px 77px
+}
+
+.RL_sex {
+    width: 75px;
+    height: 85px;
+    background-color: #191A1D;
+}
+
+.RL_bottom_name {
+   display: flex;
+   justify-content: space-between;
+   margin-left: 70px;
+   margin-top: 10px;
+}
+
+.RL_write {
+   background-color: white;
+   border-radius: 2px;
+   border: 1px solid;
+   color: black;
+   padding: 2%;
+   text-align: center;
+   font-size: 16px;
+   margin: 4px 2px;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+.RL_write:hover {
+   background-color: #D72323;
+   color: white;
+}
+
+.RL_totalcount {
+   background-color: #f1f3f5;
+   display: flex;
+   padding: 2%;
+   justify-content: space-between;
+   margin-top: 38px;
+   min-width: 1000PX;
+}
+
+.RL_totalReview {
+   background-color: #f1f3f5;
+   font-size: 19px;
+   font-weight: bold;
+}
+
+.RL_full_review{
+   width: 455px;
+   display:inline-block;
+}
+
+
+.RL_full_review_wrap{
+   width:1006.09px;
+   display:flex;
+   flex-wrap:wrap;
+   justify-content: space-between;
+}
+
+
+.RL_like_img {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+}
+
+.RL_like_logo {
+   border: none;
+   width: 48px;
+   background: white;
+   line-height:20px;
+}
+
+.RL_review_num {
+   background: white;
+}
+
+.RL_like_logo:hover {
+   cursor: pointer;
+}
+
+.RL_review_like_num{
+   display:none;
+}
+.RL_like_num{
+   background-color:white;
+   display:inline-block;
+   font-size: 14px;
+   color:#888; 
+}

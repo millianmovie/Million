@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "NEXON Lv2 Gothic";
+}
+.content, .slider, .slides {
+    content: '';
+    width: 100%;
+    height: 750px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.content {
+	width: 100%;
+    position: relative;
+    height: 100%;
+	background-color: #191A1D;
+}
+.slider {
+   width: 89vw;
+   height: 100%;
+   margin: 0 auto;
+}
+
+.slick-slide img, iframe {
+    position: relative;
+    display: block;
+    width: 89vw;
+    height: 750px;
+    margin: 0 auto;
+    top: 1.5rem;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.slick-slide img:hover , iframe:hover {
+	border: 3px solid #eee;
+}
+.slick-slide {
+	background-color:#191A1D;
+}
+.slick-list {
+	height: 800px;
+}
+.topslide_bttn{
+    position: absolute;
+    top: 350px;
+    font-size: 55px;
+    color: #eee;
+    z-index: 5;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.nextbttn {
+   right: -2rem;
+}
+.prevbttn {
+    left: -2rem;
+}
+.slick-dots {
+    position: relative;
+    left: -75rem;
+    bottom: 75px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    background-color: transparent;
+    z-index:13;
+}
+.slick-dots li button:before {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '●';
+    text-align: center;
+    opacity: .25;
+    color: #999;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #eee;
+}
+/* 반응형 스타일 */
+

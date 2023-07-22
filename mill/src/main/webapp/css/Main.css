@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "NEXON Lv2 Gothic";
+}
+.content, .slider, .slides {
+    content: '';
+    width: 100%;
+    height: 750px;
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.content {
+   position: relative;
+   height: 100%;
+   background-color: #000;
+}
+.slider {
+   width: 118.5rem;
+   height: 100%;
+   margin: 0 auto;
+}
+.slick-slide img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 720px;
+}
+
+.topslide_bttn{
+    position: absolute;
+    top: 350px;
+    font-size: 55px;
+    color: hsla(0, 0%, 100%, .1);
+    z-index: 2;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+.nextbttn {
+   right: 65px;
+}
+.prevbttn {
+    left: 65px;
+}
+.slick-dots {
+    position: relative;
+    bottom: 25px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    background-color: transparent;
+}
+.slick-dots li button:before {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 15px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '●';
+    text-align: center;
+    opacity: .25;
+    color: #999;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #eee;
+}
+
+span{
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.47;
+    color: hsla(0,0%,100%,.87);
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color .1s;
+    font-weight: 700;
+	padding:0;
+	margin:0;
+    width: 12.5rem;
+    white-space: nowrap;
+}
+
+@keyframes up{
+    from{
+      transform: translatey(0px);
+    }
+    to{
+      transform: translatey(-18px);
+    }
+}
+
+@keyframes down{
+    from{
+      transform: translatey(-18px);
+    }
+    to{
+      transform: translatey(0px);
+    }
+}
+
+.SL_result_up{
+      animation: up 0.5s ease-in-out alternate forwards;
+}
+
+.SL_result_down{
+    animation: down 0.5s ease-in-out alternate forwards;
+}

@@ -1,0 +1,192 @@
+@charset "EUC-KR";
+
+@font-face {
+   font-family: 'NEXON Lv2 Gothic';
+   src:
+      url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff')
+      format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+* {
+   margin: 0;
+   font-family: 'NEXON Lv2 Gothic';
+}
+
+
+.RV_myModal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 2; /* Sit on top */
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin-top: 21px;
+   z-index: 100;
+}
+
+
+.RV_modal {
+   top: 0;
+   left: 0;
+   display: none; /* Hidden by default */
+   position: fixed;
+   z-index: 10; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+}
+
+.RV_modal-content {
+   font-family: "NEXON Lv2 Gothic";
+   background-color: #fefefe;
+   margin: auto;
+   padding: 20px 20px 40px 20px;
+   border: 1px solid #888;
+   width: 750px;
+   height: 802px;
+   z-index: 100;
+   position: relative;
+}
+
+.RV_close {
+   background-color: white;
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.RV_close:hover, .RV_close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.RV_name {
+   background-color: white;
+   color: #000;
+   font-weight: bold;
+   font-size: 20px;
+   margin: 2%;
+}
+
+.RV_one_line {
+   line-height: 20.91px;
+   background-color: white;
+   margin: 2%;
+   display: flex;
+   align-items: flex-start;
+}
+
+.RV_date {
+   background-color: #fefefe;
+   color: #888;
+   font-weight: bold;
+   font-size: 15px;
+   padding-right: 5px;
+   border-right: 2px solid #888;
+}
+
+.RV_star_rating {
+   background-color: #fefefe;
+   color: #888;
+   font-weight: bold;
+   font-size: 15px;
+   margin-left: 2px;
+   padding-left: 2px;
+   padding-right: 5px;
+   border-right: 2px solid #888;
+}
+
+.RV_edit_delete {
+   background-color: white;
+   margin: 60px 0 0 0;
+   display: flex;
+   justify-content: space-between;
+}
+
+button {
+   background-color: white;
+   color: #000;
+}
+
+.RV_like_img {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+}
+
+.RV_title {
+   background-color: #fefefe;
+   color: #000;
+   font-weight: bold;
+   font-size: 32px;
+   margin: 2%;
+}
+
+.RV_content {
+   background-color: #fefefe;
+   color: #000;
+   width: 95%;
+   height: 520px;
+   margin: 2%;
+   font-size: 18px;
+   font-weight: bold;
+   border-top: 1px solid #ddd;
+   padding-top: 5px;
+   overflow: overlay;
+   line-height: 1.3;
+}
+
+.RV_like_logo {
+   border: none;
+   width:40px;
+}
+
+.RV_like_logo:hover {
+   cursor: pointer;
+}
+
+.RV_edit {
+   border: none;
+   width: 48%;
+   text-align: center;
+   font-weight: bold;
+   color: #888;
+   font-size: 16px;
+}
+
+.RV_edit:hover {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.RV_delete {
+   border: none;
+   width: 48%;
+   text-align: center;
+   font-weight: bold;
+   color: #888;
+   font-size: 16px;
+}
+
+.RV_delete:hover {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+}
+#RV_reviewNum{display:none;}
+
+.RV_review_like_num{
+   display:none;
+}
+.RV_like_num{
+   background-color:white;
+   display:inline-block;
+   font-size: 14px;
+   color:#888; 
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MillionMovie</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+     <!-- 
+  <context-param>
+  	<param-name>INIT_PARAM</param-name>
+  	<param-value>web.xml에 저장한 초기화 매개변수</param-value>
+  <context-param> 
+  -->
+  
+  <!-- 
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/Exception.jsp</location>
+  </error-page>
+  
+  <error-page>
+  	<error-code>405</error-code>
+  	<location>/Exception.jsp</location>
+  </error-page> -->
+  
+  
+  
+  <error-page>
+  	<error-code>500</error-code>
+  	<location>/Exception.jsp</location>
+  </error-page>
+  
+  
+  
+  <context-param>
+		<param-name>MysqlDriver</param-name>
+		<param-value>com.mysql.jdbc.Driver</param-value>
+	</context-param>  
+	<context-param>
+		<param-name>MysqlURL</param-name>
+		<param-value>jdbc:mysql://localhost:3306/movie</param-value>
+	</context-param>  
+	<context-param>
+		<param-name>MysqlId</param-name>
+		<param-value>root</param-value>
+	</context-param>  
+	<context-param>
+		<param-name>MysqlPwd</param-name>
+		<param-value>0000</param-value>
+	</context-param> 
+	
+	
+	
+	
+	<context-param>
+		<param-name>PageSize</param-name>
+		<param-value>6</param-value>
+	</context-param> 
+	<context-param>
+		<param-name>NaviSize</param-name>
+		<param-value>5</param-value>
+	</context-param> 
+
+
+
+	<session-config>
+		<session-timeout>20</session-timeout>
+	</session-config>
+	
+	
+	
+	<!-- 한글 깨짐 방지를 위한 필터 설정 -->
+  <filter>
+    <filter-name>SetCharEncoding</filter-name>
+    <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+      <init-param>
+        <param-name>encoding</param-name>
+        <param-value>utf-8</param-value>
+      </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>SetCharEncoding</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+    <servlet>
+     <servlet-name>MovieInsert</servlet-name>
+     <servlet-class>Moviecontroller.MovieInsertController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>MovieInsert</servlet-name>
+    <url-pattern>/movie_insert</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>SearchList</servlet-name>
+     <servlet-class>Moviecontroller.SearchListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>SearchList</servlet-name>
+    <url-pattern>/search_list</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>HashList</servlet-name>
+     <servlet-class>Moviecontroller.HashListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>HashList</servlet-name>
+    <url-pattern>/hash_list</url-pattern>
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>MovieView</servlet-name>
+     <servlet-class>Moviecontroller.MovieViewController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>MovieView</servlet-name>
+    <url-pattern>/movie_view</url-pattern>
+  </servlet-mapping>
+</web-app>

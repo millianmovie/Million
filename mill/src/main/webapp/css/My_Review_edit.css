@@ -1,0 +1,262 @@
+@charset "EUC-KR";
+.review_edit{
+	 background-color: #fefefe;
+}
+.RE_Modal img{
+	background-color: #fefefe;
+	
+}
+.RE_Reviewtitle {
+   color: #1a1a1a;
+   font-size: 45px;
+   background-color: #fefefe;
+   padding-bottom: 15px;
+}
+
+.RE_Contents {
+   display: flex;
+   justify-content: space-around;
+   background-color: #fefefe;
+}
+
+.RE_Likebox {
+   background-position: 0 -434px;
+   background-color: #fefefe;
+   
+}
+.RE_Like_all {
+   background-color: #fefefe;
+   
+}
+.RE_Like_all input {
+   margin: 0;
+   padding: 0;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+
+.RE_Like_all input:active+.RE_Like_check {
+   opacity: 0.5;
+}
+
+.RE_Like_all input:checked+.RE_Like_check {
+   -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+   -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+   filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+.RE_Like_check {
+   cursor: pointer;
+   background-color: #fefefe;
+   background-size: contain;
+   background-repeat: no-repeat;
+   display: inline-block;
+   width: 180px;
+   height: 75px;
+   margin: 133px auto;
+   -webkit-transition: all 100ms ease-in;
+   -moz-transition: all 100ms ease-in;
+   transition: all 100ms ease-in;
+   -webkit-filter: brightness(1.8) grayscale(1) opacity(0.7);
+   -moz-filter: brightness(1.8) grayscale(1) opacity(0.7);
+   filter: brightness(1.8) grayscale(1) opacity(0.7);
+}
+
+.RE_Like_check:hover {
+   -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+   -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+   filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+.RE_Rating_left, .RE_Rating_right {
+   line-height: 2;
+   display: flex;
+   justify-content: center;
+   margin: 11% 11% 0 0;
+   background-color: #fefefe;
+}
+.RE_Rating_right {
+   line-height: 2;
+   display: flex;
+   justify-content: center;
+   margin: 11% 0 0 11%;
+}
+
+
+.RE_Txt {
+   font-size: 23px;
+   font-weight: bold;
+   background-color: #fefefe;
+   color: black;
+}
+
+.RE_Bad, .RE_Good {
+   display: none;
+   font-weight: 500;
+   color: #000000;
+   text-align: center;
+   width: 180px;
+   height: 75px;
+}
+
+#RE_Miniposter {
+   display: inline-block;
+   width: 213px;
+   height: 298px;
+   margin: 30px 10px 15px;
+}
+.RE_Star {
+   background-color: #fefefe;
+   display: flex;
+   justify-content: center;
+   padding-bottom: 15px; 
+}
+
+.RE_Star_score {
+   position: relative;
+   font-size: 32px;
+   color: #ddd;
+   background-color: #fefefe;
+}
+
+.RE_Star_score input {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   opacity: 0;
+   cursor: pointer;
+   background-color: #fefefe;
+}
+
+.RE_Star_score span {
+   width: 0%;
+   position: absolute;
+   left: 0;
+   color: #fc0;
+   overflow: hidden;
+   pointer-events: none;
+   background-color: white;
+}
+
+.RE_Alltitle {
+   margin: 20px 10px 0;
+   background-color: #fefefe;
+   display: flex;
+    justify-content: center;
+}
+
+.RE_Title {
+   background-color: #fefefe;
+   width: 400px;
+   font-size: 20px;
+   font-weight: bold;
+   text-align: center;
+}
+
+input[type=text], input:focus {
+    border: none;
+    outline: none;
+    background: white;
+    text-align: center;
+   
+}
+
+textarea, textarea:focus {
+    border: none;
+    outline: none;
+    background: white;
+    text-align: center;
+   
+}
+
+.RE_Allcontent {
+   background-color: #fefefe;
+   width: 45rem;
+}
+
+.RE_Content {
+    background-color: #fefefe;
+    width: 86%;
+    height: 6.25em;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    resize: none;
+}
+
+.RE_Content:focus {
+/*    outline: none; */
+   outline-color: #eee;
+}
+
+.RE_Content>img {
+   height: 25px;
+}
+
+.RE_Bttn {
+   display: inline-block;
+    border: none;
+    background-color: white;
+    color: #888;
+    font-size: 1.15rem;
+    font-weight: bold;
+    width: 48%;
+    cursor: pointer;
+}
+
+.RE_Bttn:hover {
+   color: #1a1a1a;
+}
+
+/* The Modal (background) */
+/* .hidden { */
+/*     display: none; */
+/* } */
+
+.RE_Modal {
+   display:none;
+/*    display: flex; Hidden by default  */
+   align-items: center;
+   justify-content: center; 
+     position: fixed; /* Stay in place */
+     z-index: 20; /* Sit on top */
+     padding-top: 100px; /* Location of the box */
+     left: 0;
+     top: -45px;
+     width: 100%; /* Full width */
+     height: 100%; /* Full height */
+     overflow: auto; /* Enable scroll if needed */
+     background-color: rgb(0,0,0); /* Fallback color */ 
+     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content */
+.RE_Modal-con {
+  font-family: "NEXON Lv2 Gothic";
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px 20px 40px 20px;
+  border: 1px solid #888;
+  width: 758px;
+  height: max-content;
+}
+
+/* The Close Button */
+.RE_CloseModal {
+  color: #aaa;
+  float: right;
+  font-family: "NEXON Lv2 Gothic";
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #fefefe;
+}
+
+.RE_CloseModal:hover,
+.RE_CloseModal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
